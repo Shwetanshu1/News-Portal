@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    border: 20px solid rgb(137, 197, 121);
+    text-align: end;
+    background-color: rgb(137, 197, 121);
+}
+#h{
+    display: inline;
+    padding: 30px;
+}
+#h button{
+    background-color: rgb(137, 197, 121);
+    border: rgb(137, 197, 121); 
+}
+#l{
+    display: inline;
+    padding: 30px;
+}
+#b{
+    display: inline;
+    padding: 30px;
+}
+.index{
+    border: 2px solid black;
+    display: inline-block;
+    height: 30pc;
+}
+.content{
+    border: 2px solid black;
+    display: inline;
+    justify-content: center;
+}
