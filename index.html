@@ -1,28 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Portal</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>News Portal</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <link rel="stylesheet" href="style.css">
-    <div class="nav">
-       <div id="h">
-        <button type="button">Home</button>
-       </div>
-       <div id="l">
-        Login
-       </div>
-        <div id="b">
-            Bookmarks
+
+  <!-- Header -->
+  <header class="header">
+    <h1>News Portal</h1>
+    <nav class="nav-buttons">
+      <button>Home</button>
+      <button>Login</button>
+      <button>Contact Us</button>
+    </nav>
+  </header>
+
+  <!-- Main Container -->
+  <div class="container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Sections</h2>
+      <ul>
+        <li><a href="#">World News</a></li>
+        <li><a href="#">Politics</a></li>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Entertainment</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Health</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="search-section">
+        <h2>Search Your Newspaper</h2>
+        <input type="text" class="search-bar" placeholder="Search...">
+      </div>
+
+      <div class="newspaper-grid">
+        <div class="news-card">
+          <img src="https://via.placeholder.com/300x150" alt="Newspaper 1" />
+          <p>The Times Daily - Your trusted source of news.</p>
         </div>
-    </div>
-    <div class="index">
-        Search Bar & Recommendations
-    </div>
-    <div class="content">
-        Images
-    </div>
+        <div class="news-card">
+          <img src="https://via.placeholder.com/300x150" alt="Newspaper 2" />
+          <p>Global Observer - Covering events around the world.</p>
+        </div>
+        <div class="news-card">
+          <img src="https://via.placeholder.com/300x150" alt="Newspaper 3" />
+          <p>Business Herald - Daily economic updates.</p>
+        </div>
+        <div class="news-card">
+          <img src="https://via.placeholder.com/300x150" alt="Newspaper 4" />
+          <p>Entertainment Buzz - All things movies, music & more.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 News Portal. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
