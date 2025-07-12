@@ -12,15 +12,14 @@
   <header class="header">
     <h1>News Portal</h1>
     <nav class="nav-buttons">
-      <button>Home</button>
-      <button>Login</button>
-      <button>Contact Us</button>
+      <button onclick="goHome()">Home</button>
+      <button onclick="goLogin()">Login</button>
+      <button onclick="goSubmit()">Submit Article</button>
     </nav>
   </header>
 
-  <!-- Main Container -->
+  <!-- Main Layout -->
   <div class="container">
-    
     <!-- Sidebar -->
     <aside class="sidebar">
       <h2>Sections</h2>
@@ -55,10 +54,6 @@
           <img src="https://via.placeholder.com/300x150" alt="Newspaper 3" />
           <p>Business Herald - Daily economic updates.</p>
         </div>
-        <div class="news-card">
-          <img src="https://via.placeholder.com/300x150" alt="Newspaper 4" />
-          <p>Entertainment Buzz - All things movies, music & more.</p>
-        </div>
       </div>
     </main>
   </div>
@@ -68,5 +63,6 @@
     <p>&copy; 2025 News Portal. All rights reserved.</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

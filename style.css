@@ -1,16 +1,17 @@
+/* ===== Reset & Base ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background-color: #f9f9f9;
+  background: linear-gradient(to right, #e0f2ff, #f3faff);
   color: #333;
 }
 
-/* Header */
+/* ===== Header ===== */
 .header {
   background-color: #005f99;
   color: white;
@@ -23,7 +24,6 @@ body {
 
 .header h1 {
   font-size: 26px;
-  font-weight: bold;
 }
 
 .nav-buttons {
@@ -55,13 +55,13 @@ body {
   width: 100%;
 }
 
-/* Layout Container */
+/* ===== Layout Container ===== */
 .container {
   display: flex;
   min-height: 85vh;
 }
 
-/* Sidebar */
+/* ===== Sidebar ===== */
 .sidebar {
   width: 240px;
   background-color: #f1f1f1;
@@ -95,14 +95,14 @@ body {
   background-color: #ddd;
 }
 
-/* Main Content */
+/* ===== Main Content ===== */
 .main-content {
   flex: 1;
   padding: 40px;
   background-color: #fff;
 }
 
-/* Search Section */
+/* ===== Search Section ===== */
 .search-section {
   background-color: #f3f3f3;
   padding: 20px 25px;
@@ -130,7 +130,7 @@ body {
   border-color: #007acc;
 }
 
-/* Newspaper Grid */
+/* ===== News Cards ===== */
 .newspaper-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -164,11 +164,78 @@ body {
   line-height: 1.4;
 }
 
-/* Footer */
+/* ===== Footer ===== */
 .footer {
   background-color: #005f99;
   color: white;
   text-align: center;
   padding: 20px;
+  font-size: 14px;
+}
+
+/* ===== Stylish Forms (Login / Submit) ===== */
+.login-container,
+.submit-container {
+  width: 400px;
+  margin: 100px auto;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.login-container:hover,
+.submit-container:hover {
+  transform: scale(1.02);
+}
+
+.login-container h2,
+.submit-container h2 {
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #005f99;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px 15px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-color: #f5f7fa;
+  font-size: 15px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #007acc;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 122, 204, 0.3);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007acc;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005f99;
+}
+
+#loginMessage,
+#submissionMessage {
+  margin-top: 15px;
+  font-weight: bold;
   font-size: 14px;
 }

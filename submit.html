@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit Article</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="submit-container">
+    <h2>Submit Your Article</h2>
+    <form id="articleForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="text" placeholder="Article Title" required />
+      <textarea placeholder="Write your article here..." rows="8" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="submissionMessage"></p>
+  </div>
+
+  <script>
+    document.getElementById("articleForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("submissionMessage").textContent =
+        "Your article has been submitted for review!";
+    });
+  </script>
+</body>
+</html>
