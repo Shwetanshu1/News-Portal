@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>News Portal</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -36,11 +37,13 @@
 
     <!-- Main Content -->
     <main class="main-content">
+      <!-- Search Section -->
       <div class="search-section">
         <h2>Search Your Newspaper</h2>
         <input type="text" class="search-bar" placeholder="Search...">
       </div>
 
+      <!-- Newspaper Grid -->
       <div class="newspaper-grid">
         <div class="news-card">
           <img src="https://via.placeholder.com/300x150" alt="Newspaper 1" />
@@ -52,9 +55,42 @@
         </div>
         <div class="news-card">
           <img src="https://via.placeholder.com/300x150" alt="Newspaper 3" />
-          <p>Business Herald - Daily economic updates.</p>
+          <p>Business Herald - Daily economic updates and insights.</p>
+        </div>
+        <div class="news-card">
+          <img src="https://via.placeholder.com/300x150" alt="Newspaper 4" />
+          <p>Tech Today - Stay updated on the latest innovations.</p>
+        </div>
+        <div class="news-card">
+          <img src="https://via.placeholder.com/300x150" alt="Newspaper 5" />
+          <p>SportXpress - Fast, factual, and thrilling sports stories.</p>
+        </div>
+        <div class="news-card">
+          <img src="https://via.placeholder.com/300x150" alt="Newspaper 6" />
+          <p>The Culture Lens - Your window to arts and entertainment.</p>
         </div>
       </div>
+
+      <!-- Promo Section -->
+      <section class="promo-section">
+        <h2>Why Choose News Portal?</h2>
+        <p>News Portal brings you real-time, reliable, and unbiased news across the globe. Whether it's breaking headlines or in-depth analysis, we ensure you stay informed and ahead.</p>
+
+        <div class="features">
+          <div class="feature">
+            <h3>⏱ Real-Time Updates</h3>
+            <p>Get breaking news the moment it happens, from verified sources only.</p>
+          </div>
+          <div class="feature">
+            <h3>🌍 Diverse Categories</h3>
+            <p>From politics to pop culture — all topics covered in one place.</p>
+          </div>
+          <div class="feature">
+            <h3>📝 Community Driven</h3>
+            <p>Submit your own articles and get published on the front page.</p>
+          </div>
+        </div>
+      </section>
     </main>
   </div>
 
@@ -63,6 +99,18 @@
     <p>&copy; 2025 News Portal. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    function goHome() {
+      window.location.href = 'index.html';
+    }
+
+    function goLogin() {
+      window.location.href = 'login.html';
+    }
+
+    function goSubmit() {
+      window.location.href = 'submit.html';
+    }
+  </script>
 </body>
 </html>

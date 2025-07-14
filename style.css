@@ -164,6 +164,57 @@ body {
   line-height: 1.4;
 }
 
+/* ===== Promo Section ===== */
+.promo-section {
+  margin-top: 50px;
+  background-color: #f1f9ff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.promo-section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #005f99;
+  text-align: center;
+}
+
+.promo-section p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  color: #333;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.feature {
+  flex: 1 1 250px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.feature h3 {
+  font-size: 18px;
+  color: #007acc;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #555;
+}
+
 /* ===== Footer ===== */
 .footer {
   background-color: #005f99;
